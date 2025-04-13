@@ -1,5 +1,6 @@
 #include <iostream>
 #include "calculator.h"
+#include "maths.h"
 using namespace std;
 
 int main() {
@@ -36,5 +37,7 @@ int main() {
     } catch (const std::invalid_argument& e) {
         std::cerr << "Error: " << e.what() << std::endl;
     }
+
+    cout << "cube of 3 is: " << MathFunctions::cube(3) << endl;
     return 0;
 }
